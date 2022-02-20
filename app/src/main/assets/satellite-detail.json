@@ -1,0 +1,23 @@
+[
+  {
+    "satelliteId": 1,
+    "costPerLaunch": 7200000,
+    "firstFlight": "2021-12-01",
+    "height": 118,
+    "mass": 1167000
+  },
+  {
+    "satelliteId": 2,
+    "costPerLaunch": 8300000,
+    "firstFlight": "2020-10-03",
+    "height": 110,
+    "mass": 1135000
+  },
+  {
+    "satelliteId": 3,
+    "costPerLaunch": 6000000,
+    "firstFlight": "2019-09-14",
+    "height": 132,
+    "mass": 1435000
+  }
+]

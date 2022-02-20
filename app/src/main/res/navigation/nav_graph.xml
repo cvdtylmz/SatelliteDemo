@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/satelliteListFragment">
+
+    <fragment
+        android:id="@+id/satelliteListFragment"
+        android:label="Satellite List"
+        android:name="com.cevdetyilmaz.satellite.feature.list.SatelliteListFragment"
+        tools:layout="@layout/fragment_satellite_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailsFragment"
+            app:destination="@id/satelliteDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/satelliteDetailFragment"
+        android:name="com.cevdetyilmaz.satellite.feature.detail.SatelliteDetailFragment"
+        android:label="Satellite Detail"
+        tools:layout="@layout/fragment_satellite_detail">
+        <argument
+            android:name="satellite_id"
+            app:argType="integer" />
+        <argument
+            android:name="satellite_name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addNotesFragment_to_notesFragment"
+            app:destination="@id/satelliteListFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/satelliteListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

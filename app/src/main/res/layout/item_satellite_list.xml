@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/img_satellite_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/txt_satellite_status"
+        app:layout_constraintEnd_toEndOf="@id/txt_satellite_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_satellite_name"
+        tools:src="@drawable/ic_active_circle" />
+
+    <TextView
+        android:id="@+id/txt_satellite_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium"
+        app:layout_constraintBottom_toTopOf="@id/txt_satellite_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Starship-1" />
+
+    <TextView
+        android:id="@+id/txt_satellite_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium"
+        app:layout_constraintEnd_toEndOf="@id/txt_satellite_name"
+        app:layout_constraintStart_toStartOf="@id/txt_satellite_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_satellite_name"
+        tools:text="Active" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

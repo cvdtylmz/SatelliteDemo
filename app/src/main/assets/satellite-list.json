@@ -1,0 +1,17 @@
+[
+  {
+    "satelliteId": 1,
+    "active": false,
+    "name": "Starship-1"
+  },
+  {
+    "satelliteId": 2,
+    "active": true,
+    "name": "Dragon-1"
+  },
+  {
+    "satelliteId": 3,
+    "active": true,
+    "name": "Starship-3"
+  }
+]
